@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<h2>JavaScript Form Validation</h2>
+<p>HTML form validation can be done by JavaScript.</p>
+<p>if a form field (fname)is empty,this function alerts a message,and returns false, to prevent the form from being submitted:</p>
+
+<script>
+function validateForm(){
+ let x =document.forms["myform"]["fname"].value;
+ if (x ==""){
+ alert("Name must be filled out");
+ return false;
+ }
+}
+</script>
+<body>
+
+<form name="myform"action=""onsubmit="return validateForm"method="post">
+Name:<input type="text"name="fname">
+<input type="submit"value="Submit">
+</form>
+
+
+
+</body>
+</head>
+</html>
